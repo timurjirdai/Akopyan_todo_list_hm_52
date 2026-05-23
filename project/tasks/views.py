@@ -19,6 +19,6 @@ def create_task(request):
     else:
         form = TaskForm()
 
-    return render(request, 'tasks/create_task.html', {
+    return render(request, 'create_task.html', {
         'form': form
     })
