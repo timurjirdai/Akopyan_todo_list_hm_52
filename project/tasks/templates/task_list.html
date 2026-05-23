@@ -6,13 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Список задач</h1>
+    <h1>Список задач:</h1>
 
 {% for task in tasks %}
     <div>
         <h3>{{ task.description }}</h3>
         <p>Статус: {{ task.status }}</p>
-        <p>Дата выполнения: {{ task.due_date }}</p>
+        <p>Дата выполнения: {{ task.date }}</p>
     </div>
     <hr>
 {% endfor %}
