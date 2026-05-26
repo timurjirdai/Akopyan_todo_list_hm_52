@@ -17,20 +17,16 @@
         {% for task in tasks %}
             <div class="card mb-3">
                 <div class="card-body">
-
                     <h3>
                         <a href="{% url 'task_detail' task.id %}" style="text-decoration: none;">
                             {{ task.description }}
                         </a>
                     </h3>
-
                     <p>Статус: {{ task.status }}</p>
                     <p>Дата: {{ task.date }}</p>
-
                 </div>
             </div>
         {% endfor %}
-
     </div>
 </body>
 </html>
