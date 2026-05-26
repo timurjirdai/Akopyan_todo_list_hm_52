@@ -1,29 +1,22 @@
 [
-{
-    "model": "tasks.task",
-    "pk": 7,
-    "fields": {
-        "description": "Купить хлеб",
-        "status": "new",
-        "date": "2026-05-26"
+    {
+        "model": "tasks.task",
+        "pk": 1,
+        "fields": {
+            "description": "Сделать уборку ДЗ",
+            "details": "пропылесосить, помыть полы, помыть посуду",
+            "status": "in_progress",
+            "date": "2026-05-26"
+        }
+    },
+    {
+        "model": "tasks.task",
+        "pk": 2,
+        "fields": {
+            "description": "Сделать уроки",
+            "details": "Русский, английский, математику",
+            "status": "new",
+            "date": "2020-09-30"
+        }
     }
-},
-{
-    "model": "tasks.task",
-    "pk": 8,
-    "fields": {
-        "description": "Сделать дз",
-        "status": "new",
-        "date": "2020-09-30"
-    }
-},
-{
-    "model": "tasks.task",
-    "pk": 10,
-    "fields": {
-        "description": "ываываываыаыва",
-        "status": "done",
-        "date": "2026-05-26"
-    }
-}
 ]
