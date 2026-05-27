@@ -11,7 +11,7 @@
     <h1>{{ task.description }}</h1>
     <p><b>Статус: </b> {{ task.status }}</p>
     <p><b>Дата: </b> {{ task.date }}</p>
-    <p><b>Описание: </b>{{ task.details }}</p>
+    <p><b>Описание: </b>{{ task.details|linebreaks }}</p>
     {% endblock %}
 </body>
 </html>
