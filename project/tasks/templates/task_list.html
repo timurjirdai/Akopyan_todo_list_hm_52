@@ -7,13 +7,10 @@
     <title>Список задач</title>
 </head>
 <body>
+    {% extends 'base.html' %}
+    {% block content %}
     <div class="container mt-5">
         <h1>Список задач</h1>
-
-        <a href="{% url 'create_task' %}" class="btn btn-primary mb-3">
-            Добавить задачу
-        </a>
-
         {% for task in tasks %}
             <div class="card mb-3">
                 <div class="card-body">
@@ -28,5 +25,6 @@
             </div>
         {% endfor %}
     </div>
+    {% endblock %}
 </body>
 </html>

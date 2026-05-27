@@ -6,10 +6,12 @@
     <title>Document</title>
 </head>
 <body>
+    {% extends 'base.html' %}
+    {% block content %}
     <h1>{{ task.description }}</h1>
-    <p><b>Статус:</b> {{ task.status }}</p>
-    <p><b>Дата:</b> {{ task.date }}</p>
-    <p><b>Описание:</b>{{ task.description }}</p>
-    <a href={% url 'task_list'%}>Вернуться на Главную</a>
+    <p><b>Статус: </b> {{ task.status }}</p>
+    <p><b>Дата: </b> {{ task.date }}</p>
+    <p><b>Описание: </b>{{ task.details }}</p>
+    {% endblock %}
 </body>
 </html>
